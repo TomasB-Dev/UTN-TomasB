@@ -7,7 +7,7 @@ read key
 clave=cuenta
 user=pepe
 
-if [[ $usuario ==  $user && $key ==  $clave ]];
+if [[ "$usuario" ==  "$user" && "$key" ==  "${clave,,}" ]];
 then
 echo Iniciaste session
 else
