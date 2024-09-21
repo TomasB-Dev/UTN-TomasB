@@ -123,28 +123,91 @@ void main(){
             escuela = 5;
         }
         
+    //experimento
+    // for (int i = 0; i < 31; i++)
+    // {
+    //     for (int j = 0; j < 53; j++)
+    //     {
+    //         if ( j == 52)
+    //         {
+    //             printf("*\n");
+    //         }else
+    //             {   if (j > 18 && j < 32)
+    //             {
+    //                 printf(" ");
+    //             }else{
+    //                 printf("*");
+    //             }
+            
+                
+    //         }
+    //     }
+        
+        
+        
+    //} 
     
+    // printf("*****************************************************\n");
+    // printf("*******************|           |*********************\n");
+    // printf("*******************|  GANADOR  |*********************\n");
+    // printf("*******************|___________|*********************\n");
+    // printf("**                                                 **\n");
+    // printf("**       El Ganador es el candidato nro %d          **\n",candidato);
+    // printf("**            Con un total de %d votos             **\n", mayor_candidato);
+    // printf("**                                                 **\n");
+    // printf("*****************************************************\n");
+    // printf("*****************************************************\n");
+    // printf("**                                                 **\n");
+    // printf("** La escuela con mas votantes es la escuela nro %d **\n",escuela);
+    // printf("**          Con un total de %d votantes            **\n",mayor_Escuela);
+    // printf("**                                                 **\n");
+    // printf("*****************************************************\n");
+    // printf("******************|              |*******************\n");
+    // printf("******************| ESTADISTICAS |*******************\n");
+    // printf("******************|______________|*******************\n");
+    // printf("**                                                 **\n");
+    // printf("**       ESCUELAS        |      CANDIDATOS         **\n");
+    // printf("**                       |                         **\n");
+    // printf("**     Escuela 1: %d     |    Candidato 1: %d      **\n",escuela1, candidato1);
+    // printf("**     Escuela 2: %d     |    Candidato 2: %d      **\n",escuela2, candidato2);
+    // printf("**     Escuela 3: %d     |    Candidato 3: %d      **\n",escuela3, candidato3);
+    // printf("**     Escuela 4: %d     |    Candidato 4: %d      **\n",escuela4, candidato4);
+    // printf("**     Escuela 5: %d     |                         **\n",escuela5); 
+    // printf("**                       |                         **\n");
+    // printf("*****************************************************\n");
+    // printf("*****************************************************\n");
 
-    printf("*****************************************************\n");
-    printf("*******************|           |*********************\n");
-    printf("*******************|  GANADOR  |*********************\n");
-    printf("*******************|___________|*********************\n");
-    printf("**                                                 **\n");
-    printf("**       El Ganador es el candidato nro %d          **\n",candidato);
-    printf("**            Con un total de %d votos             **\n", mayor_candidato);
-    printf("**                                                 **\n");
-    printf("*****************************************************\n");
-    printf("*****************************************************\n");
-    printf("**                                                 **\n");
-    printf("** La escuela con mas votantes es la escuela nro %d **\n",escuela);
-    printf("**          Con un total de %d votantes            **\n",mayor_Escuela);
-    printf("**                                                 **\n");
-    printf("*****************************************************\n");
-    printf("*****************************************************\n");
-    printf("**                                                 **\n");
-    printf("**                 Miguelito aprobame              **\n");
-    printf("**                                                 **\n");
-    printf("*****************************************************\n");
-    printf("*****************************************************\n");
+    int opcion;
+    printf("**VOTACIONES 2024**\n");
+    printf("Seleccione una opcion: \n1- Candidato Ganador\n2- Escuela con mas votantes\n");
+    printf("3- Cantidad de votos por escuela\n4- Cantidad de votos por candidato\n5- Salir\n");
+    scanf("%d",&opcion);
+    switch (opcion)
+    {
+    case 1:
+        printf("El candidato ganador es: Candidato nro %d",candidato);
+        break;
+    case 2:
+        printf("La escuela con mas votante es: Escuela nro %d", escuela);
+        break;
+    case 3:
+        printf("La escuela nro 1 tuvo %d votos.\n",escuela1);
+        printf("La escuela nro 2 tuvo %d votos.\n",escuela2);
+        printf("La escuela nro 3 tuvo %d votos.\n",escuela3);
+        printf("La escuela nro 4 tuvo %d votos.\n",escuela4);
+        printf("La escuela nro 5 tuvo %d votos.\n",escuela5);
+        break;
+    case 4:
+        printf("El votante nro 1 tuvo %d votos.\n",candidato1);
+        printf("El votante nro 2 tuvo %d votos.\n",candidato2);
+        printf("El votante nro 3 tuvo %d votos.\n",candidato3);
+        printf("El votante nro 4 tuvo %d votos.\n",candidato4);
+        break;
+    case 5:
+    break;
+    default:
+    printf("La opcion es incorrecta, aprende a leer!");
+    break;
+    }
 
 }
